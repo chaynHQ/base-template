@@ -18,8 +18,8 @@ const navLinkStyles =
   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red focus-visible:ring-offset-2 focus-visible:ring-offset-peach-tint";
 
 const ctaStyles =
-  "inline-flex h-9 items-center justify-center rounded-full bg-red px-5 text-sm font-semibold text-cream " +
-  "transition-colors hover:bg-red/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red " +
+  "inline-flex h-9 items-center justify-center rounded-full bg-peach px-5 text-sm font-semibold " +
+  "transition-colors hover:bg-peach/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-peach " +
   "focus-visible:ring-offset-2 focus-visible:ring-offset-peach-tint";
 
 const mobileItemStyles =

@@ -157,6 +157,10 @@
     "legalTrustCentre": "Trust Centre",
     "legalContact": "Contact"
   },
+  "leaveSite": {
+    "button": "Leave this site",
+    "ariaLabel": "Leave this site quickly — opens a safe page and replaces browser history"
+  },
   "error": {
     "heading": "Something went wrong",
     "tryAgain": "Try again",

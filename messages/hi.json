@@ -157,6 +157,10 @@
     "legalTrustCentre": "Trust Centre",
     "legalContact": "Sampark karein"
   },
+  "leaveSite": {
+    "button": "Yeh site chhodein",
+    "ariaLabel": "Jaldi yeh site chhodein — ek surakshit page khuliga aur browser history replace hogi"
+  },
   "error": {
     "heading": "Kuch galat ho gaya",
     "tryAgain": "Phir koshish karein",
