@@ -1,0 +1,181 @@
+{
+  "site": {
+    "title": "Chayn",
+    "description": "Chayn — lingo aur himsa ke shikar logon ki madad karne wali ek global charity."
+  },
+  "temp": {
+    "eyebrow": "Chayn Open Source",
+    "heading": "Next.js Starter Template",
+    "intro": "Chayn web projects ke liye ek production-ready, multilingual neenv — accessible, GDPR-anukul, aur trauma-informed design ke saath banaya gaya.",
+    "githubCta": "GitHub par dekhein",
+    "githubCtaAriaLabel": "GitHub par Chayn dekhein (nayi tab mein khuliga)",
+
+    "stackHeading": "Kya shamil hai",
+    "stackItems": [
+      {
+        "label": "Next.js 16",
+        "desc": "App Router, React Server Components, static rendering, Turbopack"
+      },
+      {
+        "label": "React 19",
+        "desc": "Default se Server Components — static layouts ke liye zero JS"
+      },
+      {
+        "label": "TypeScript 5",
+        "desc": "Poore codebase mein strict types"
+      },
+      {
+        "label": "Tailwind CSS 4",
+        "desc": "Design tokens, utility-first styling — clsx ya tailwind-merge nahi"
+      },
+      {
+        "label": "next-intl 4",
+        "desc": "English (UK) aur Hindi (Latin script) locales, RTL-ready architecture"
+      },
+      {
+        "label": "WCAG AA",
+        "desc": "Default se accessible: skip links, ARIA roles, poore mein semantic HTML"
+      },
+      {
+        "label": "GDPR compliance",
+        "desc": "Cookie consent gate — bina explicit consent ke koi tracking script load nahi hoti"
+      },
+      {
+        "label": "Rollbar",
+        "desc": "IPs anonymise karke aur fingerprinting band karke error tracking"
+      },
+      {
+        "label": "Cypress 15",
+        "desc": "GitHub Actions CI pipeline ke saath end-to-end test suite"
+      }
+    ],
+
+    "designHeading": "Design system",
+
+    "paletteHeading": "Rang palette",
+    "paletteNames": {
+      "red": "Laal",
+      "peach": "Peach",
+      "peachTint": "Peach Tint",
+      "cream": "Cream",
+      "green": "Hara",
+      "lilac": "Lilac",
+      "lilacTint": "Lilac Tint",
+      "olive": "Olive",
+      "blue": "Neela",
+      "pink": "Gulabi",
+      "yellow": "Peela"
+    },
+
+    "typographyHeading": "Typography",
+    "typographyFontSerif": "Merriweather — headings (font-serif)",
+    "typographyH1Example": "Heading level ek ka udaaharan",
+    "typographyH2Example": "Heading level do ka udaaharan",
+    "typographyH3Example": "Heading level teen ka udaaharan",
+    "typographyH4Example": "Heading level chaar ka udaaharan",
+    "typographyFontSans": "Open Sans — body (font-sans)",
+    "typographyBodyExample": "Open Sans mein body text. Sab paragraph copy, navigation, labels, aur UI elements ke liye upyog kiya jaata hai. Har size par saaf aur padhne mein aasaan — Chayn ke survivor-facing kaam ke liye ek garam, approachable character ke saath.",
+    "typographySmallExample": "Chhota text — captions, footnotes, aur supporting copy.",
+
+    "componentsHeading": "Components",
+    "componentsBtnPillLabel": ".btn-pill — pill-shaped CTA button",
+    "componentsBtnPrimary": "Prathamik",
+    "componentsBtnSecondary": "Dviteeyak",
+    "componentsBtnOutline": "Rekha",
+    "componentsCardBorderedLabel": ".card-bordered — peach border ke saath rounded container",
+    "componentsCardTintedHeading": "Tinted card",
+    "componentsCardTintedDesc": "Featured ya highlighted content blocks ke liye upyog karein.",
+    "componentsCardWhiteHeading": "Safed card",
+    "componentsCardWhiteDesc": "List items ya secondary content areas ke liye upyog karein.",
+
+    "startHeading": "Shuru karein",
+    "startIntro": "Fork karein, customize karein, aur ship karein.",
+
+    "step1Heading": "Clone & install",
+    "step1Desc": "Repository ko clone karein aur dependencies install karein.",
+    "step1Code": "git clone https://github.com/chaynHQ/[your-repo].git\ncd [your-repo]\nnpm install",
+
+    "step2Heading": "Environment configure karein",
+    "step2Desc": "Example env file copy karein aur apne values bharein. Sab integrations optional hain — app bina inke bhi chalti hai.",
+    "step2Code": "cp .env.example .env.local",
+
+    "step3Heading": "Dev server shuru karein",
+    "step3Desc": "Apne browser mein <link>localhost:3000</link> kholein aur build karna shuru karein.",
+    "step3Code": "npm run dev",
+
+    "chaynTrackHeading": "Chayn ke saath build karna",
+    "chaynTrackDesc": "Chayn ka branding aur assets rakhen — bas apni samagri jodein.",
+    "chaynCheck1": "<code>messages/en.json</code> mein <code>site.title</code> aur <code>site.description</code> update karein",
+    "chaynCheck2": "<code>components/layout/TopNav.tsx</code> mein nav items jodein",
+    "chaynCheck3": "<code>NEXT_PUBLIC_SITE_URL</code> ko apne production domain par set karein",
+    "chaynCheck4": "<code>.env.local</code> ke zariye optional integrations configure karein (Rollbar, GA4, Hotjar)",
+    "chaynCheck5": "<code>app/[locale]/</code> ke andar routes aur pages jodein",
+    "chaynCheck6": "<code>app/[locale]/page.tsx</code> mein is page ko apni samagri se badlein",
+
+    "externalTrackHeading": "Nayi sanstha ke liye fork karna",
+    "externalTrackDesc": "Chayn track ki sab cheezein, aur poora rebrand bhi.",
+    "externalCheck1": "Upar diye gaye Chayn project track mein sab kuch",
+    "externalCheck2": "<code>public/favicon.ico</code>, <code>public/og-image.png</code>, <code>public/apple-touch-icon.png</code>, aur <code>app/icon.png</code> ko apne assets se badlein",
+    "externalCheck3": "<code>app/globals.css</code> mein <code>@theme inline</code> ke andar colour palette update karein",
+    "externalCheck4": "<code>app/[locale]/layout.tsx</code> mein fonts update karein",
+    "externalCheck5": "<code>components/layout/Footer.tsx</code> aur <code>TopNav.tsx</code> se Chayn branding aur links hatayein",
+    "externalCheck6": "<code>i18n/routing.ts</code> aur <code>lib/locale-dir.ts</code> mein locales jodein ya hatayein"
+  },
+  "nav": {
+    "skipToContent": "Mukhya saamagri par jaayein",
+    "headerLabel": "Site header",
+    "primaryNav": "Mukhya navigation",
+    "logoLabel": "Chayn — homepage par jaayein",
+    "siteName": "Chayn",
+    "openMenu": "Navigation menu kholein",
+    "closeMenu": "Navigation menu band karein",
+    "changeLanguage": "Bhasha badlein",
+    "languageMenu": "Bhasha ke vikalp",
+    "ctaLabel": "Chayn par jaayein",
+    "ctaAriaLabel": "Chayn website par jaayein (nayi tab mein khuliga)",
+    "navExamplePage": "Page",
+    "navExampleSection": "Section",
+    "navExampleSectionMenuLabel": "Site Section",
+    "navExampleIntro": "Introduction"
+  },
+  "footer": {
+    "ariaLabel": "Site footer",
+    "tagline": "Ek global charity jo lingo aur himsa ke shikar logon ki madad karti hai.",
+    "charityRegistration": "Chayn CIO. UK Charity Number: 1196098",
+    "legalColumn": "Legal aur Jaankari",
+    "followUs": "Hamare saath judein",
+    "socialLinksLabel": "Chayn social media par",
+    "opensInNewTab": "nayi tab mein khuliga",
+    "chaynHomepageLabel": "Chayn — mukhya website par jaayein (nayi tab mein khuliga)",
+    "chaynCoAbout": "Chayn ke baare mein",
+    "chaynCoDonate": "Daan karein",
+    "chaynCoCareers": "Naukri ke avsar",
+    "orgChaynCoProjects": "Pariyojanaen",
+    "orgChaynCoPartnerships": "Saajhedaari",
+    "orgChaynCoImpact": "Prabhav",
+    "legalPolicies": "Hamari neeti",
+    "legalTrustCentre": "Trust Centre",
+    "legalContact": "Sampark karein"
+  },
+  "error": {
+    "heading": "Kuch galat ho gaya",
+    "tryAgain": "Phir koshish karein",
+    "critical": "Ek mahatvapurna error aaya",
+    "refreshPrompt": "Kuch galat ho gaya. Kripaya page ko refresh karein."
+  },
+  "cookieBanner": {
+    "regionLabel": "Cookie samati",
+    "heading": "Hum analytics cookies ka upyog karte hain",
+    "body": "yeh samajhne ke liye ki visitors is site se kaise judtey hain aur Chayn ki samagri ko behtar banane ke liye. Koi bhi vyaktigat data becha ya advertisers ke saath share nahi kiya jaata.",
+    "privacyLink": "Niji niti",
+    "acceptButton": "Analytics sweekar karein",
+    "declineButton": "Mana karein",
+    "acceptAriaLabel": "Cookies sweekar karein",
+    "declineAriaLabel": "Cookies mana karein",
+    "updateHeading": "Apni cookie settings update karein",
+    "statusEnabled": "Cookies abhi enabled hain.",
+    "statusDisabled": "Cookies abhi disabled hain.",
+    "updateBody": "Hum analytics ka upyog karte hain yeh samajhne ke liye ki log hamare resources se kaise judtey hain aur survivors ke liye hamaari sahayata behtar banane ke liye. Koi bhi vyaktigat data store ya share nahi kiya jaata.",
+    "settingsButtonLabel": "Cookie settings"
+  }
+}

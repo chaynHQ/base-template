@@ -1,0 +1,181 @@
+{
+  "site": {
+    "title": "Chayn",
+    "description": "Chayn — a global charity supporting survivors of gender-based violence and abuse."
+  },
+  "temp": {
+    "eyebrow": "Chayn Open Source",
+    "heading": "Next.js Starter Template",
+    "intro": "A production-ready, multilingual foundation for Chayn web projects — accessible, GDPR-compliant, and built with trauma-informed design at its core.",
+    "githubCta": "View on GitHub",
+    "githubCtaAriaLabel": "View Chayn on GitHub (opens in a new tab)",
+
+    "stackHeading": "What's included",
+    "stackItems": [
+      {
+        "label": "Next.js 16",
+        "desc": "App Router, React Server Components, static rendering, Turbopack"
+      },
+      {
+        "label": "React 19",
+        "desc": "Server Components by default — zero JS shipped for static layouts"
+      },
+      {
+        "label": "TypeScript 5",
+        "desc": "Strict types throughout the entire codebase"
+      },
+      {
+        "label": "Tailwind CSS 4",
+        "desc": "Design tokens, utility-first styling — no clsx or tailwind-merge"
+      },
+      {
+        "label": "next-intl 4",
+        "desc": "English (UK) and Hindi (Latin script) locales, RTL-ready architecture"
+      },
+      {
+        "label": "WCAG AA",
+        "desc": "Accessible by default: skip links, ARIA roles, semantic HTML throughout"
+      },
+      {
+        "label": "GDPR compliance",
+        "desc": "Cookie consent gate — no tracking scripts load without explicit consent"
+      },
+      {
+        "label": "Rollbar",
+        "desc": "Error tracking with IPs anonymised and fingerprinting disabled"
+      },
+      {
+        "label": "Cypress 15",
+        "desc": "End-to-end test suite with a GitHub Actions CI pipeline"
+      }
+    ],
+
+    "designHeading": "Design system",
+
+    "paletteHeading": "Colour palette",
+    "paletteNames": {
+      "red": "Red",
+      "peach": "Peach",
+      "peachTint": "Peach Tint",
+      "cream": "Cream",
+      "green": "Green",
+      "lilac": "Lilac",
+      "lilacTint": "Lilac Tint",
+      "olive": "Olive",
+      "blue": "Blue",
+      "pink": "Pink",
+      "yellow": "Yellow"
+    },
+
+    "typographyHeading": "Typography",
+    "typographyFontSerif": "Merriweather — headings (font-serif)",
+    "typographyH1Example": "Heading level one example",
+    "typographyH2Example": "Heading level two example",
+    "typographyH3Example": "Heading level three example",
+    "typographyH4Example": "Heading level four example",
+    "typographyFontSans": "Open Sans — body (font-sans)",
+    "typographyBodyExample": "Body text in Open Sans. Used for all paragraph copy, navigation, labels, and UI elements. Clear and readable at every size, with a warm, approachable character suited to Chayn\u2019s survivor-facing work.",
+    "typographySmallExample": "Small text — captions, footnotes, and supporting copy.",
+
+    "componentsHeading": "Components",
+    "componentsBtnPillLabel": ".btn-pill — pill-shaped CTA button",
+    "componentsBtnPrimary": "Primary",
+    "componentsBtnSecondary": "Secondary",
+    "componentsBtnOutline": "Outline",
+    "componentsCardBorderedLabel": ".card-bordered — rounded container with peach border",
+    "componentsCardTintedHeading": "Tinted card",
+    "componentsCardTintedDesc": "Use for featured or highlighted content blocks.",
+    "componentsCardWhiteHeading": "White card",
+    "componentsCardWhiteDesc": "Use for list items or secondary content areas.",
+
+    "startHeading": "Get started",
+    "startIntro": "Fork, customise, and ship.",
+
+    "step1Heading": "Clone & install",
+    "step1Desc": "Clone the repository and install dependencies.",
+    "step1Code": "git clone https://github.com/chaynHQ/[your-repo].git\ncd [your-repo]\nnpm install",
+
+    "step2Heading": "Configure environment",
+    "step2Desc": "Copy the example env file and fill in your values. All integrations are optional — the app runs without any of them.",
+    "step2Code": "cp .env.example .env.local",
+
+    "step3Heading": "Start the dev server",
+    "step3Desc": "Open <link>localhost:3000</link> in your browser and begin building.",
+    "step3Code": "npm run dev",
+
+    "chaynTrackHeading": "Building within Chayn",
+    "chaynTrackDesc": "Keep the Chayn branding and assets — just add your content.",
+    "chaynCheck1": "Update <code>site.title</code> and <code>site.description</code> in <code>messages/en.json</code>",
+    "chaynCheck2": "Add nav items in <code>components/layout/TopNav.tsx</code>",
+    "chaynCheck3": "Set <code>NEXT_PUBLIC_SITE_URL</code> to your production domain",
+    "chaynCheck4": "Configure optional integrations via <code>.env.local</code> (Rollbar, GA4, Hotjar)",
+    "chaynCheck5": "Add routes and pages inside <code>app/[locale]/</code>",
+    "chaynCheck6": "Replace this page with your content in <code>app/[locale]/page.tsx</code>",
+
+    "externalTrackHeading": "Forking for a new organisation",
+    "externalTrackDesc": "Everything in the Chayn track, plus a full rebrand.",
+    "externalCheck1": "Everything in the Chayn project track above",
+    "externalCheck2": "Replace <code>public/favicon.ico</code>, <code>public/og-image.png</code>, <code>public/apple-touch-icon.png</code>, and <code>app/icon.png</code> with your own assets",
+    "externalCheck3": "Update the colour palette in <code>app/globals.css</code> under <code>@theme inline</code>",
+    "externalCheck4": "Update fonts in <code>app/[locale]/layout.tsx</code>",
+    "externalCheck5": "Remove Chayn branding and links from <code>components/layout/Footer.tsx</code> and <code>TopNav.tsx</code>",
+    "externalCheck6": "Add or remove locales in <code>i18n/routing.ts</code> and <code>lib/locale-dir.ts</code>"
+  },
+  "nav": {
+    "skipToContent": "Skip to main content",
+    "headerLabel": "Site header",
+    "primaryNav": "Primary navigation",
+    "logoLabel": "Chayn — go to homepage",
+    "siteName": "Chayn",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "changeLanguage": "Change language",
+    "languageMenu": "Language options",
+    "ctaLabel": "Go to Chayn",
+    "ctaAriaLabel": "Go to Chayn website (opens in a new tab)",
+    "navExamplePage": "Page",
+    "navExampleSection": "Section",
+    "navExampleSectionMenuLabel": "Site Section",
+    "navExampleIntro": "Introduction"
+  },
+  "footer": {
+    "ariaLabel": "Site footer",
+    "tagline": "A global charity supporting survivors of gender-based violence and abuse.",
+    "charityRegistration": "Chayn CIO. UK Charity Number: 1196098",
+    "legalColumn": "Legal & Info",
+    "followUs": "Follow us",
+    "socialLinksLabel": "Chayn on social media",
+    "opensInNewTab": "opens in a new tab",
+    "chaynHomepageLabel": "Chayn — go to main website (opens in a new tab)",
+    "chaynCoAbout": "About Chayn",
+    "chaynCoDonate": "Donate",
+    "chaynCoCareers": "Careers",
+    "orgChaynCoProjects": "Projects",
+    "orgChaynCoPartnerships": "Partnerships",
+    "orgChaynCoImpact": "Impact",
+    "legalPolicies": "Our Policies",
+    "legalTrustCentre": "Trust Centre",
+    "legalContact": "Contact"
+  },
+  "error": {
+    "heading": "Something went wrong",
+    "tryAgain": "Try again",
+    "critical": "A critical error occurred",
+    "refreshPrompt": "Something went wrong. Please try refreshing the page."
+  },
+  "cookieBanner": {
+    "regionLabel": "Cookie consent",
+    "heading": "We use analytics cookies",
+    "body": "to understand how visitors engage with this site and to improve Chayn\u2019s content. No personal data is stored or shared with third parties.",
+    "privacyLink": "Privacy policy",
+    "acceptButton": "Accept",
+    "declineButton": "Decline",
+    "acceptAriaLabel": "Accept cookies",
+    "declineAriaLabel": "Decline cookies",
+    "updateHeading": "Update your cookie settings",
+    "statusEnabled": "Cookies are currently enabled.",
+    "statusDisabled": "Cookies are currently disabled.",
+    "updateBody": "We use analytics to understand how people engage with our resources and improve our support for survivors. No personal data is stored or shared.",
+    "settingsButtonLabel": "Cookie settings"
+  }
+}
