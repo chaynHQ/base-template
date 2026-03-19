@@ -12,6 +12,12 @@
 const COOKIE = "chaynCookieConsent";
 const GA4_SCRIPT = 'script[src*="googletagmanager.com/gtag/js"]';
 
+// Skip GA4-loading assertions when NEXT_PUBLIC_GA_ID is not configured (e.g. fresh forks).
+// Tests that assert GA4 does NOT load are unaffected and will still run.
+const skipIfNoGA = function (this: Mocha.Context) {
+  if (!Cypress.env("NEXT_PUBLIC_GA_ID")) this.skip();
+};
+
 describe("Cookie consent", () => {
   it("shows the banner on first visit", () => {
     cy.clearCookies();
@@ -26,13 +32,14 @@ describe("Cookie consent", () => {
     cy.get(GA4_SCRIPT).should("not.exist");
   });
 
-  it("accept — hides banner, sets accepted cookie with path=/, loads GA4", () => {
+  it("accept — hides banner, sets accepted cookie with path=/, loads GA4", function () {
     cy.clearCookies();
     cy.visit("/");
     cy.get('button[aria-label="Accept cookies"]').click();
     cy.contains("We use analytics cookies").should("not.exist");
     cy.getCookie(COOKIE).should("have.property", "value", "accepted");
     cy.getCookie(COOKIE).should("have.property", "path", "/");
+    skipIfNoGA.call(this);
     cy.get(GA4_SCRIPT, { timeout: 6000 }).should("exist");
   });
 
@@ -47,7 +54,8 @@ describe("Cookie consent", () => {
     cy.get(GA4_SCRIPT).should("not.exist");
   });
 
-  it("returning accepted visitor — no banner, GA4 auto-loads", () => {
+  it("returning accepted visitor — no banner, GA4 auto-loads", function () {
+    skipIfNoGA.call(this);
     cy.clearCookies();
     cy.setCookie(COOKIE, "accepted", { path: "/" });
     cy.visit("/");
@@ -64,7 +72,8 @@ describe("Cookie consent", () => {
     cy.get(GA4_SCRIPT).should("not.exist");
   });
 
-  it("consent revoked — cookie is cleared and banner reappears on reload", () => {
+  it("consent revoked — cookie is cleared and banner reappears on reload", function () {
+    skipIfNoGA.call(this);
     cy.setCookie(COOKIE, "accepted", { path: "/" });
     cy.visit("/");
     cy.get(GA4_SCRIPT, { timeout: 6000 }).should("exist");
@@ -151,7 +160,8 @@ describe("Cookie settings button", () => {
     cy.get(SETTINGS_BTN).should("be.visible");
   });
 
-  it("GA4 script is neutered after revoking consent mid-session", () => {
+  it("GA4 script is neutered after revoking consent mid-session", function () {
+    skipIfNoGA.call(this);
     cy.setCookie(COOKIE, "accepted", { path: "/" });
     cy.visit("/");
     cy.get(GA4_SCRIPT, { timeout: 6000 }).should("exist");
