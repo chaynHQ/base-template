@@ -55,6 +55,7 @@ jobs:
           wait-on: http://localhost:3000
         env:
           NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
+          CYPRESS_NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
 
       - uses: actions/upload-artifact@v7
         if: failure()
