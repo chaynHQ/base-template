@@ -19,15 +19,15 @@
     "cypress:coverage": "npx nyc report --reporter=text-summary"
   },
   "dependencies": {
-    "@next/third-parties": "^16.1.7",
+    "@next/third-parties": "^16.2.3",
     "@rollbar/react": "^1.0.0",
     "@vercel/analytics": "^2.0.1",
     "js-cookie": "^3.0.5",
-    "next": "16.1.7",
-    "next-intl": "^4.8.3",
-    "react": "19.2.4",
+    "next": "16.2.3",
+    "next-intl": "^4.9.0",
+    "react": "19.2.5",
     "react-cookie-consent": "^10.0.1",
-    "react-dom": "19.2.4",
+    "react-dom": "19.2.5",
     "react-hotjar": "^6.3.1",
     "rollbar": "^3.1.0"
   },
