@@ -18,7 +18,7 @@ jobs:
           # Not strictly necessary for this specific github-script if it's self-contained
 
       - name: Create or Update Release Pull Request
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const { repo, owner } = context.repo;

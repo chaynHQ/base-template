@@ -43,7 +43,7 @@ jobs:
           cache: npm
 
       - name: Run Cypress tests
-        uses: cypress-io/github-action@v7.1.5
+        uses: cypress-io/github-action@v7.1.9
         with:
           browser: chrome
           config-file: cypress.config.ts
